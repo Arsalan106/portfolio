@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css">\ -->
+    <style>
+        
+        * {
+            padding: 0px;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 110px 0px;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            /* background-color: red; */
+            font-size: 3rem;
+
+        }
+
+        .rightsection img {
+            width: 81%;
+            margin: 46px;
+        }
+
+        main hr {
+            margin: 40px 90px;
+            border: 0;
+            background: #7979b6;
+            height: 2.2px;
+        }
+
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover {
+            /* text-decoration: none; */
+            color: lavender;
+            font-size: 1.06rem;
+        }
+
+        #element {
+            color: lavender;
+        }
+
+        .secondsection {
+            margin: auto;
+            max-width: 80vw;
+            ;
+        }
+
+        footer {
+            background-color: rgb(3, 9, 41);
+            height: 30vh;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 30px;
+
+        }
+
+        button {
+            /* width: 30px; */
+
+            padding: 9px;
+            width: 201px;
+            background-color: #de1212;
+            color: #100d0d;
+            border-radius: 7px;;
+        }
+        .button a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+    
+
+        
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Arsalan Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Serivces</a></li>
+                    <li><a href="#">Past proojects</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Arsalan</span>
+                <div>and I am a passionate</div>
+
+                <!-- <div>Web Developer</div>  -->
+                <span id="element"></span>
+                <div class="button">
+                    <button><a href="https://github.com/Arsalan106">Visit Github</a></button>
+                    <button class="btn"><a href="https://github.com/Arsalan106">Download Resume</a></button>
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="img.png" alt="">
+            </div>
+        </section>
+        <hr>
+    </main>
+    <!-- <footer>
+        <div class="footer">
+            <div class="footer-first"><h3>Developer Portfolio</h3></div>
+            <div class="footer-second">Home</div>
+            <div class="footer-third">About</div>
+            <div class="footer-fourth">Contact</div>
+        </div>
+    </footer> -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web Developer</i> ','Graphic Designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
